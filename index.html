@@ -5,120 +5,257 @@
     <title>Easy Call</title>
     <link rel="stylesheet" href="/css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/kube.min.css">
-<!--    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">-->
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
    
- 
 <ul class="menu navbar navbar-pills">
-<div class="menu-inner">
-	<li data-menuanchor="firstPage"><a href="#firstPage">Главная</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Описание системы</a></li>
-	<li data-menuanchor="3page"><a href="#3page">Что вас ждет</a></li>
-	<li data-menuanchor="4page"><a href="#4page">Тарифные планы</a></li>
-	<li data-menuanchor="5page"><a href="#5page">Вопросы и ответы</a></li>
-	<li data-menuanchor="lastPage"><a href="#lastPage">Регистрация</a></li>
-</div>
+    <div class="menu-inner">
+        <li data-menuanchor="firstPage"><a href="#firstPage">Easy Call</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Описание</a></li>
+        <li data-menuanchor="3page"><a href="#3page">Тарифы</a></li>
+        <li data-menuanchor="4page"><a href="#4page">FAQ</a></li>
+        <li data-menuanchor="lastPage"><a href="#lastPage">Вход</a></li>
+    </div>
 </ul>
 
-    </div>
+<video autoplay loop id="bgvid">
+    <source src="video/video.mp4" type="video/mp4">
+    <source src="video/video.ogv" type="video/webm">
+    <source src="video/video.webm" type="video/ogv">
+</video>
 
 
 <div id="fullpage">
 	<div class="section main-bg" id="section0">
-		
 		<div class="units-row units-split end">
             <div class="unit-100">
                <div class="text-centered main-heading one-slide">
                     <h1>Easy Call</h1>
-                    <p>Простой способ сделать свой мобильный сайт комфортнее</p>
-                    <button type="button" class="main-heading__try-now">Попробовать сейчас</button>
+                    <p>Это виджет, который сделает ваш сайт удобнее и увеличит продажи,</p>
+        <p>оптимизировав сайт для мобильных телефонов всего за 250 рублей.</p> 
+                   <form action="" class="main-form">
+                   <div class="main-start">  
+                    <input type="email" placeholder="Введите ваш email">
+                    <input type="submit" class="main-heading__try-now go-submit" value="Начать работу">
+                    </div>
+                   </form> 
                 </div>
-            </div>
-        </div>
-	</div>
+                 <hr>
+                <div class="container">
+                    <div class="units-row units-split end">
+                        <div class="unit-50">
+                          <p class="b-per">20%</p>
+                          <div class="inner-icons">
+                            <div class="b-phone my-icons-phone"></div>
+                            <p>
+                              посетителей вашего сайта заходят на него с мобильных телефонов
+                          </p>
+                            </div>
+                        </div>
+                   
+                    <div class="unit-50">
+                        <p class="b-per">40%</p>
+                        <div class="inner-icons">
+                          <div class="b-contacts my-icons-contacts"></div>
+                          <p>
+                              посетителей, зашедших на сайт с телефонов ищут ваши контакты.
+                          </p>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div> <!-- end unit 100-->
+        </div> <!-- end row-->
+	</div> <!-- end section 0-->
+	
+	
 	<div class="section" id="section1">
-	    <div class="intro">
-			<div class="units-row units-split end">
-               <div class="unit-100">
-                   <div class="text-centered two-slide">
-				<h1>Оптимизируйте свой сайт для мобильных телефонов</h1>
-                   </div>
-                   <article class="container">
-                   <div class="units-row end">
-                        <div class="unit-30">
-                            <img src="img/icons.gif" alt="">
-                        </div>
-                        <div class="unit-70">
-                            <ul class="opt-list">
-                                <li>Каждый 5 посетитель вашего сайта просматривает его через мобильный телефон</li>
-                                <li>3 из 5 посетителей с мобильных устройств ищут на сайте контакты</li>
-                                <li>Система Easy Call - простой способ сделать ваш мобильный сайт удобнее и дружелюбнее для ваших клиентов</li>
-                            </ul>
-                        </div>
-                   </div>
-                   <div class="units-row end">
-                        <div class="unit-100">
-                        <div class="text-centered">
-                         <button type="button" class="main-heading__try-now try__reg">Перейти к регистрации</button>
-                        </div>
+	   <div class="intro">
+			<div class="container">
+                <div class="units-row end">
+                    <div class="unit-100">
+                        <div class="tab">
+                            <ul class="tabs">
+                                <li><a href="#">Настройка вида</a></li>
+                                <li><a href="#">Выбор филиалов</a></li>
+                                <li><a href="#">Доп. настройки</a></li>
+                            </ul> <!-- / tabs -->
+
+	<div class="tab_content">
+		<div class="tabs_item">
+            <div class="units-row end">
+                <div class="unit-30">
+                    <div class="iphone">
+			    <div class="screen">
+			       <div class="url-header">
+                                <div class="url-input">
+                                    <label for="offer-site-input">http://</label>
+                                    <input id="offer-site-input" type="text" value="">
+                                </div>
+                                <div class="url-bars">
+                                    <div class="url-submit"></div>
+                                </div>
+                    </div>
+                        <div class="widget"></div>
+			    </div>
+			</div>
+                </div>
+                <div class="unit-70">
+                    <div class="b-choose-show">
+                       <div class="b-colors">
+                          <p>Цвет</p>
+                           <span class="c-black"></span>
+                           <span class="c-blue"></span>
+                           <span class="c-tomato"></span>
+                           <span class="c-green"></span>
+                           <span class="c-grey"></span>
+                           <span class="c-red"></span>
+                           <span class="c-yellow"></span>
+                       </div>
+                    <div class="b-move-btn">
+                    <p>Положение</p>
+                       <div>
+                           <span>Слева</span>
+                           <span>Посередине</span>
+                           <span>Справа</span>
                        </div>
                     </div>
-                   
-                   </article>
-                   
+                    </div>
                 </div>
             </div>
-		</div>
-	    
-	</div>
-	<div class="section" id="section2">
-		<div class="intro">
-			<div class="container">
-			    <div class="units-row end">
-                   <div class="text-centered two-slide">
-				<h1>Что вас ждет после установки</h1>
-                   </div>
-                   <article class="text-centered waiting">
-                        <div class="unit-30 waiting-module">
-                            <p>Кнопка вызова на мобильной версии сайта с помощью которой посетитель сможет быстро связаться с компанией</p>
-                        <div class="units-row end">
-                            <div class="unit-100">
-                                <p>Гибкая настройка вида - местоположение кнопки вызова на мобильной версии сайта и ее цвет</p>
-                            </div> 
-                        </div>
-                        <div class="units-row end">
-                            <div class="unit-100">
-                                <p>Выбор филиалов и офисов. Вы можете привязать несколько телефонов к одному коду виджета на сайте. Например, отдел продаж и отдел сервиса фидиала в городе Уфа и Москва</p>
-                            </div> 
-                        </div>
-                        </div>
-                        <div class="unit-40">
-                        <div class="waiting-phone text-centered">
-                            <img src="/img/phone.png" alt="" class="phone">
-                        </div>
-                        </div>
-                        <div class="unit-30 waiting-module">
-                            <p>Подробная статистика по звонкам включая общее количество посетилей и клиентов</p>
-                        <div class="units-row end">
-                            <div class="unit-100">
-                                <p>Поддержка всех мобильных устройств, кнопка работает на всех смартфонах, операционных системах и браузеров</p>
-                            </div> 
-                        </div>
-                        <div class="units-row end">
-                            <div class="unit-100">
-                                <p>Рост звонков по статистике 30% трафика в интернете является мобильным трафиком. Ваши клиенты получат удобный инструмент для скорейшей связи с вами.</p>
-                            </div> 
-                        </div>
-                        </div>
-                    </article>
-                    <div class="text-centered">
-                         <button type="button" class="main-heading__try-now try__reg">Перейти к регистрации</button>
-                        </div>
+
+		</div> <!-- / tabs_item -->
+
+		<div class="tabs_item">
+		<div class="units-row end">
+		<div class="unit-30">
+			<div class="iphone">
+			    <div class="screen">
+			         <div class="url-header">
+                                <div class="url-input">
+                                    <label for="offer-site-input">http://</label>
+                                    <input id="offer-site-input" type="text" value="">
+                                </div>
+                                <div class="url-bars">
+                                    <div class="url-submit"></div>
+                                </div>
+                    </div>
+			    </div>
+			</div>
+            </div>
+            <div class="unit-70">Введите адрес вашего сайта,
+             чтобы посмотреть как виджет  cashmyvisit работает на нем</div>
+            </div>
+		</div> <!-- / tabs_item -->
+
+		<div class="tabs_item">
+				<div class="units-row end">
+		<div class="unit-30">
+			<div class="iphone">
+			    <div class="screen">
+			         <div class="url-header">
+                                <div class="url-input">
+                                    <label for="offer-site-input">http://</label>
+                                    <input id="offer-site-input" type="text" value="">
+                                </div>
+                                <div class="url-bars">
+                                    <div class="url-submit"></div>
+                                </div>
+                    </div>
+			    </div>
+			</div>
+            </div>
+            <div class="unit-70">Введите адрес вашего сайта,
+             чтобы посмотреть как виджет  cashmyvisit работает на нем</div>
+            </div>
+		</div> <!-- / tabs_item -->
+		
+	</div> <!-- / tab_content -->
+</div> <!-- / tab -->
+                    </div>
                 </div>
 			</div>
 		</div>
+	    
+	</div>
+	
+	
+	<div class="section" id="section2">
+	
+	<div class="intro">
+			<div class="units-row units-split end">
+               <div class="unit-100">
+               
+               <div class="container">
+                  <table class="pricing">
+                      <tr>
+                          <td class="width-25"><span>250</span><p>в месяц</p></td>
+                          <td class="width-25"><span>500</span><p>в месяц</p></td>
+                          <td class="width-25"><span>600</span><p>в месяц</p></td>
+                          <td class="width-25"><span>700</span><p>в месяц</p></td>
+                      </tr>
+                      <tr>
+                          <td>+1 сайт</td>
+                          <td><span class="plus-add">+</span></td>
+                          <td><span class="plus-add">+</span></td>
+                          <td><span class="plus-add">+</span></td>
+                      </tr>
+                      <tr>
+                          <td>
+                              Поддержка всех типов смартфонов и браузеров
+                          </td>
+                          <td><span class="plus-add">+</span></td>
+                          <td><span class="plus-add">+</span></td>
+                          <td><span class="plus-add">+</span></td>
+                      </tr>
+                      <tr>
+                          <td>
+                              Гибкая настройка вида
+                          </td>
+                          <td><span class="plus-add">+</span></td>
+                          <td><span class="plus-add">+</span></td>
+                          <td><span class="plus-add">+</span></td>
+                      </tr>
+                       <tr>
+                          <td>
+                              Подробная статистика
+                          </td>
+                          <td><span class="plus-add">+</span></td>
+                          <td><span class="plus-add">+</span></td>
+                          <td><span class="plus-add">+</span></td>
+                      </tr>
+                      <tr>
+                          <td>
+                              1 телефон
+                          </td>
+                          <td><span class="endless">&infin;</span>телефонов</td>
+                          <td>1 телефон</td>
+                           <td><span class="endless">&infin;</span>телефонов</td>
+                      </tr>
+                      <tr>
+                          <td></td>
+                          <td></td>
+                          <td>Сбор заявок в нерабочее время</td>
+                          <td>Сбор заявок в нерабочее время</td>
+                      </tr>
+                  </table>
+               </div>
+               
+               
+               
+
+                   
+                </div>
+            </div>
+		</div>
+	
+	
+	
+	
+	
+	
+
 	</div>
 	
 	<div class="section" id="section3">
@@ -128,92 +265,69 @@
 			    <div class="units-row end">
                    <article class="text-centered two-slide tarif-slide">
                        <div class="unit-100">
-                           
-                       <div id="container">
-                       <h1>Тарифные планы</h1>
-	<div class="whole">
-	<div class="type">
-		<p><span>500</span>250 руб/месяц ,</p>
-		<p><span>5000</span>2500 руб/год</p>
-		
-		</div>
-	<div class="plan">
+                        <div class="text-centered two-slide whiter">
+<!--                  <h1>Вопросы и ответы</h1>-->
+                     </div>  
+                  <section class="all-accordion">
+                   <div class="item accordion">
+                        <h2>Зачем все это надо?</h2>
+                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст..
+                        </p>
+                       
+                        <small>Zooey Deschanel</small>
+                    </div>
+  
+                      <div class="item accordion">
+                        <h2>Быть или не быть?</h2>
+                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст..
+                        </p>
+                      </div>
 
-		<div class="header">
-
-		</div>
-		<div class="content">
-			<ul>
-				<li>Сайт компании</li>
-				<li>Телефонный номер компании</li>
-				
-			</ul>
-
-		</div>
-		
-		<div class="price">
-      <a href="#" class="bottom"><p class="cart">Выбрать</p></a>
-		</div>
-	</div>
-</div>
-	<div class="whole">
-		<div class="type standard">
-		<p><span>1000</span>500руб/месяц ,</p>
-		<p><span>10000</span>5000руб/год</p>
-		</div>
-	<div class="plan">
-
-		<div class="header">
-
-		</div>
-		<div class="content">
-			<ul>
-				<li>Сайт компании</li>
-				<li>Телефонный номер компании</li>
-			</ul>
-		</div>
-		<div class="price">
-			<a href="#" class="bottom"><p class="cart">Выбрать</p></a>
-		</div>
-	</div>
-</div>
-
-	<div class="whole">
-		<div class="type ultimate">
-		<p><span>1500</span>750руб/месяц ,</p>
-		<p><span>15000</span>7500руб/год</p>
-		</div>
-	<div class="plan">
-
-		<div class="header">
-
-		</div>
-		<div class="content">
-			<ul>
-				<li>Сайт компании</li>
-				<li>Телефонный номер компании</li>
-				<li>Сбор лидов в нерабочее время</li>
-<!--				<li>500GB Bandwidth</li>-->
-			</ul>
-		</div>
-		<div class="price">
-            <a href="#" class="bottom"><p class="cart">Выбрать</p></a>
-		</div>
-	</div>
-</div>
-</div>    
-             
-                       </div>
-                       <button type="button" class="main-heading__try-now try__reg">Перейти к регистрации</button>
+                      <div class="item accordion">
+                        <h2>Зачем все это тебе надо?</h2>
+                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст..
+                        </p>
+                      </div>
+                      
+                      <div class="item accordion">
+                        <h2>Почему именно так?</h2>
+                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст..
+                        </p>
+                      </div>
+                      
+                      <div class="item accordion">
+                        <h2>Ты в чем-то не уверен?</h2>
+                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст..
+                        </p>
+                      </div>
+                      
+                      <div class="item accordion">
+                        <h2>Как быть?</h2>
+                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст..
+                        </p>
+                      </div>
+                      
+                      <div class="item accordion">
+                        <h2>Это ты вообще?</h2>
+                       <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст..
+                        </p>
+                      </div>
+                     </section>
+                     <hr class="hr-red">
+                    <form action="" class="main-form else-form">
+                   <div class="main-start">  
+                    <input type="email" placeholder="Введите ваш email">
+                    <input type="submit" class="main-heading__try-now go-submit go-submit-else" value="Начать работу">
+                    </div>
+                   </form> 
                     </article>
+                       </div>
+                </div>    
+             </div>
+           
             </div>
-                </div>
-            
-			
-			
-			
-			
-			
+            </div>
+
 		</div>
 		
 	</div>

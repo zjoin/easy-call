@@ -83,6 +83,9 @@ h1 {
     color: #f05543;
 }
 
+.main-form.else-form {
+    text-align: center;
+}
 
 .main-form.else-form input {
     border: 2px solid #f05543;
@@ -352,7 +355,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 }
 
 #section2 {
-   background: rgba(255,255,255,.9);
+   background: rgba(255,255,255,.8);
 }
 #section3 {
      background: rgba(255,255,255,.9);
@@ -880,6 +883,11 @@ PRICING
 
 \**************************************************/
 
+.pricing {
+  border-top: 2px solid rgba(0,0,0,.2);  
+  border-bottom: 2px solid rgba(0,0,0,.2);  
+}
+
 .pricing tr:first-child span {
     position: relative;
     font-size: 40px;
@@ -914,7 +922,9 @@ PRICING
 
 
 .pricing p {
-    color: #939598;
+/*    color: #939598;*/
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .endless {
@@ -924,16 +934,23 @@ PRICING
 
 
 .pricing tr td.width-25 {
-    border-bottom: 2px solid #f05543;
-/*    text-align: center !important;*/
+/*    border-bottom: 2px solid #f05543;*/
+    background-color: rgba(255,255,255,.6);
+    padding-top: 25px;
 }
 
 .pricing td {
     text-align: center;
-    font-size: 16px;
+/*    font-size: 16px;*/
+    padding: .5em;
 }
 
-
+.pricing td {
+    border-left: 2px solid rgba(0,0,0,.2);
+    border-right: 2px solid rgba(0,0,0,.2);
+    border-bottom: 0;
+    background: rgba(255,255,255,.8);
+}
 
 /**************************************************\
 
@@ -993,6 +1010,7 @@ TABS
 .tabs_item {
   display: none;
   padding: 30px 0;
+  padding-bottom: 0;    
 }
 .tabs_item h4 {
   font-weight: bold;
@@ -1156,6 +1174,8 @@ TABS
     bottom: 10px;
     left: 50%;
     margin-left: -26px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
 }
 
 .b-colors {
@@ -1194,5 +1214,112 @@ TABS
 .c-grey { background: #b2b2b2; }
 .c-red { background: #ec0423; }
 .c-yellow { background: #f4ad49; }
+
+.go-right {
+    left: 175px;
+}
+
+.go-left {
+    left: 40px;
+}
+
+
+
+
+
+
+.cmv_button__yes,.cmv_button__connect,.cmv_button__notime,.jRatingAverage,.jRatingColor,.cmv_main__close:hover:before,.cmv_phone__cir2,.cmv_phone__mobile,.cmv_phone__handset{background-color:#f85c3c;}
+.cmv_button__connect:hover,.cmv_button__notime:hover,.cmv_button__yes:hover{background:#f97054;box-shadow:0 0 1px rgba(0,0,0,.22);}
+.cmv_button__connect:active,.cmv_button__notime:active,.cmv_button__yes:active{background:#da5135;}
+.cmv_button__no{background:#9e9e9e;margin-left:9px;}
+.cmv_button__no:hover{background:#aaa;box-shadow:0 0 1px rgba(0,0,0,.22);}
+.cmv_button__no:active{background:#8b8b8b;}
+.cmv_input__item.cmv_input__item_error,.cmv_input__item2.cmv_input__item_error {border:1px solid #f85c3c;}
+.cmv_phone__cir{border:2px solid #f87b61;}
+.cmv_main strong{font-weight:600;}
+.cmv_main__cpr{color:#f87b61!important}
+.cmv_main .cmv_main__cpr:hover {color:#f87b61;}
+#cmv_phone__button .cmv_phone__cir {background-color:#f85c3c;}
+.cmv_collect__button, .cmv_collect__input_bg, .cmv_collect__close, .cmv_collect__close.cmv_collect__disabled:hover{background-color:#FF5C37;}
+.cmv_collect__close:hover{background-color:#FF7F63;}
+.cmv_collect .cmv_collect__upload{border:1px solid #FF5C37;}
+.cmd_geo_value, .cmd_branchoffice_value {color:#f87b61!important;border-color: #f87b61!important;}
+#cmv_geo, #cmv_dealers {color: #f87b61; border-bottom: 1px dotted #f87b61;}
+
+
+
+
+
+/* ANIM PHONE
+
+*/
+.cmv_phone {visibility:hidden;
+    position:absolute;z-index: 200000!important;
+    width:147px;height:147px;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: visibility .5s;
+    transition: visibility .5s;
+}
+
+
+
+
+
+.cmv_phone.cmv_phone__show {visibility: visible;}
+
+.cmv_phone__cir {
+    position: absolute;top:0;left:0;
+	width:160px;height:160px;
+    background-color: transparent;border-radius: 100%;
+    -webkit-animation: cmv_phone__cir_anim 2s infinite ease-in-out;animation: cmv_phone__cir_anim 2s infinite ease-in-out;
+}@-webkit-keyframes cmv_phone__cir_anim{0%{-webkit-transform:rotate(0deg) scale(0.5) skew(1deg);-webkit-opacity:.1}30%{-webkit-transform:rotate(0deg) scale(.7) skew(1deg);-webkit-opacity:.5}100%{-webkit-transform:rotate(0deg) scale(1) skew(1deg);-webkit-opacity:.1}}@keyframes cmv_phone__cir_anim{0%{-webkit-transform:rotate(0deg) scale(0.5) skew(1deg);transform:rotate(0deg) scale(0.5) skew(1deg);opacity:.1}30%{-webkit-transform:rotate(0deg) scale(.7) skew(1deg);transform:rotate(0deg) scale(.7) skew(1deg);opacity:.5}100%{-webkit-transform:rotate(0deg) scale(1) skew(1deg);transform:rotate(0deg) scale(1) skew(1deg);opacity:.1}}
+
+.cmv_phone__cir2 {
+    position: absolute;top:50%;left:50%;
+	width:90px;height:90px;
+	margin:-37px 0 0 -37px;
+	opacity:.5;border-radius: 100%;
+    -webkit-animation: cmv_phone__cir_anim2 2s infinite ease-in-out;animation: cmv_phone__cir_anim2 2s infinite ease-in-out;
+	-webkit-transition: all .3s ease;transition: all .3s ease;
+}@-webkit-keyframes cmv_phone__cir_anim2{0%{-webkit-transform:rotate(0deg) scale(0.9) skew(1deg);}50%{-webkit-transform:rotate(0deg) scale(1) skew(1deg);}100%{-webkit-transform:rotate(0deg) scale(0.9) skew(1deg);}}@keyframes cmv_phone__cir_anim2{0%{-webkit-transform:rotate(0deg) scale(0.9) skew(1deg);transform:rotate(0deg) scale(0.9) skew(1deg);}50%{-webkit-transform:rotate(0deg) scale(1) skew(1deg);transform:rotate(0deg) scale(1) skew(1deg);}100%{-webkit-transform:rotate(0deg) scale(0.9) skew(1deg);transform:rotate(0deg) scale(0.9) skew(1deg);}}
+
+.cmv_phone__cir3 {
+    position: absolute;top:50%;left:50%;z-index:1;
+	width:68px;height:68px;
+    background-color: transparent;
+	margin:-27px 0 0 -27px;
+	border: 1px solid #fff;
+	opacity:.5;border-radius: 100%;
+	 /* -webkit-animation: cmv_phone__cir_anim3 1.2s infinite ease-in-out;-moz-animation: cmv_phone__cir_anim3 1.2s infinite ease-in-out;-ms-animation: cmv_phone__cir_anim3 1.2s infinite ease-in-out;-o-animation: cmv_phone__cir_anim3 1.2s infinite ease-in-out;animation: cmv_phone__cir_anim3 1.2s infinite ease-in-out; */
+}@-webkit-keyframes cmv_phone__cir_anim3{0%{-webkit-transform:rotate(0deg) scale(0.6) skew(1deg);-webkit-opacity:.1}30%{-webkit-transform:rotate(0deg) scale(.8) skew(1deg);-webkit-opacity:.5}100%{-webkit-transform:rotate(0deg) scale(1) skew(1deg);-webkit-opacity:.1}}@keyframes cmv_phone__cir_anim3{0%{-webkit-transform:rotate(0deg) scale(0.6) skew(1deg);transform:rotate(0deg) scale(0.6) skew(1deg);opacity:.1}30%{-webkit-transform:rotate(0deg) scale(.8) skew(1deg);transform:rotate(0deg) scale(.8) skew(1deg);opacity:.5}100%{-webkit-transform:rotate(0deg) scale(1) skew(1deg);transform:rotate(0deg) scale(1) skew(1deg);opacity:.1}}
+
+.cmv_phone__cir4 {
+    position: absolute;top:50%;left:50%;
+	width:74px;height:74px;
+	margin:-30px 0 0 -30px;border-radius: 100%;
+    -webkit-animation: cmv_phone__cir4 2s infinite ease-in-out;animation: cmv_phone__cir4 2s infinite ease-in-out;
+}
+.cmv_phone:hover .cmv_phone__cir2{opacity:1;}
+.cmv_phone__mobile {background:url(http://widget.cashmyvisit.com/img/cmv_phone__handset.png) no-repeat 50% 50%;}
+.cmv_phone__handset {background:url(http://widget.cashmyvisit.com/img/cmv_phone__handset.png) no-repeat 50% 50%;}
+@keyframes cmv_phone__cir4{0%{-webkit-transform:rotate(0deg) scale(1) skew(1deg);transform:rotate(0deg) scale(1) skew(1deg)}10%{-webkit-transform:rotate(-25deg) scale(1) skew(1deg);transform:rotate(-25deg) scale(1) skew(1deg)}20%{-webkit-transform:rotate(25deg) scale(1) skew(1deg);transform:rotate(25deg) scale(1) skew(1deg)}30%{-webkit-transform:rotate(-25deg) scale(1) skew(1deg);transform:rotate(-25deg) scale(1) skew(1deg)}40%{-webkit-transform:rotate(25deg) scale(1) skew(1deg);transform:rotate(25deg) scale(1) skew(1deg)}100%,50%{-webkit-transform:rotate(0deg) scale(1) skew(1deg);transform:rotate(0deg) scale(1) skew(1deg)}}@-webkit-keyframes cmv_phone__cir4{0%{-webkit-transform:rotate(0deg) scale(1) skew(1deg)}10%{-webkit-transform:rotate(-25deg) scale(1) skew(1deg)}20%{-webkit-transform:rotate(25deg) scale(1) skew(1deg)}30%{-webkit-transform:rotate(-25deg) scale(1) skew(1deg)}40%{-webkit-transform:rotate(25deg) scale(1) skew(1deg)}100%,50%{-webkit-transform:rotate(0deg) scale(1) skew(1deg)}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

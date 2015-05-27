@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; target-densityDpi=device-dpi" />
     <title>Easy Call</title>
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/kube.min.css">
@@ -97,7 +98,33 @@
                                     <div class="url-submit"></div>
                                 </div>
                     </div>
-                        <div class="widget"></div>
+                    
+                    <!--block animation-->
+                    <div class="b-anim">
+                        <div class="anim-slide1">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="anim-slide2"></div>
+                        <div class="anim-slide3"></div>
+                        <div class="anim-slide4"></div>
+                    </div>
+                    <!-- end animation-->
+                    
+<!--                        <div class="widget"></div>-->
+<!--
+               <div>
+                <div class="cmv_phone cmv_phone__show cmv_widgetbuton_body cmv_widgetbuton_button" cmv_widgetshow_button="1" cmv_next_dialog="15" style="bottom: 10%; right: 5%; display: block;">
+            <div class="cmv_phone__cir"></div>
+            <div class="cmv_phone__cir2"></div>
+            <div class="cmv_phone__cir3"></div>
+          
+            <div class="cmv_phone__cir4 cmv_phone__handset cmv_widgetbuton_button"></div>
+                       </div>
+                    </div>       
+-->
+                       
 			    </div>
 			</div>
                 </div>
@@ -116,9 +143,9 @@
                     <div class="b-move-btn">
                     <p>Положение</p>
                        <div>
-                           <span>Слева</span>
-                           <span>Посередине</span>
-                           <span>Справа</span>
+                           <span class="to-left">Слева</span>
+                           <span class="to-center">Посередине</span>
+                           <span class="to-right">Справа</span>
                        </div>
                     </div>
                     </div>
@@ -175,6 +202,13 @@
 </div> <!-- / tab -->
                     </div>
                 </div>
+                
+                <form action="" class="main-form else-form">
+                   <div class="main-start">  
+                    <input type="email" placeholder="Введите ваш email">
+                    <input type="submit" class="main-heading__try-now go-submit go-submit-else" value="Начать работу">
+                    </div>
+                </form>  
 			</div>
 		</div>
 	    
@@ -240,12 +274,19 @@
                           <td>Сбор заявок в нерабочее время</td>
                       </tr>
                   </table>
+                 
+                  
+                   
+                 <form action="" class="main-form else-form">
+                   <div class="main-start">  
+                    <input type="email" placeholder="Введите ваш email">
+                    <input type="submit" class="main-heading__try-now go-submit go-submit-else" value="Начать работу">
+                    </div>
+                   </form>     
                </div>
                
                
-               
 
-                   
                 </div>
             </div>
 		</div>
@@ -266,15 +307,12 @@
                    <article class="text-centered two-slide tarif-slide">
                        <div class="unit-100">
                         <div class="text-centered two-slide whiter">
-<!--                  <h1>Вопросы и ответы</h1>-->
                      </div>  
                   <section class="all-accordion">
                    <div class="item accordion">
                         <h2>Зачем все это надо?</h2>
                         <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст..
                         </p>
-                       
-                        <small>Zooey Deschanel</small>
                     </div>
   
                       <div class="item accordion">
@@ -390,81 +428,8 @@
                  </div>
               </div>
             </div>
-
 		</div>
-	</div>
-	<div class="section" id="section5">
-		<div class="intro">
-			<div class="container">
-             <div class="units-row end">
-                 <div class="unit-50">
-                 <div class="text-centered two-slide">
-                  <h1>Регистрация</h1>
-                    
-                  <div class="register">
-                 
-                  <form action="">
-                      <div>
-                          <input type="text" placeholder="Имя" class="input3">
-                      </div>
-                      <div>
-                          <input type="email" placeholder="E-mail" class="input3">
-                      </div>
-                       <div>
-                          <input type="password" placeholder="Пароль" class="input3">
-                      </div>
-                      <div>
-                          <input type="tel" placeholder="Телефон" class="input3">
-                      </div>
-                      <div>
-                          <input type="text" placeholder="Сайт" class="input3">
-                      </div>
-                      <div>
-                          <button type="submit" class="btn-reg">Зарегистрироваться</button>
-                      </div>
-                        <div class="apply">
-                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-                          <symbol id="checkmark" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-miterlimit="10" fill="none"  d="M22.9 3.7l-15.2 16.6-6.6-7.1">
-                            </path>
-                          </symbol>
-                        </svg>
-                                                 <div class="promoted-checkbox">
-                            <input id="tmp" type="checkbox" class="promoted-input-checkbox"/>
-                            <label for="tmp">
-                              <svg><use xlink:href="#checkmark" /></svg>      
-                                Согласен с условием <a href="">оферты</a>   
-                            </label>
-                          </div>
-
-                      </div>
-                  </form>
-              </div>
-                    
-                    
-                    
-                     </div>
-                 </div>
-                 <div class="unit-50">
-                     <div class="text-centered two-slide">
-                  <h1>Наши клиенты</h1>
-                    <div class="clients">
-                     <img src="/img/clients.png" alt="">
-                         </div>
-                     </div>
-                 </div>
-                </div>
-                  <div class="units-row end">
-                     <div class="unit-100">
-                        <address class="text-centered">
-                            CashMyVisit © 2014 | ООО "Дельта вэй программные решения" | Санкт-Петербург Пироговская набережная 21А офис 67  | info@cashmyvisit.com | +7 812 490-70-62
-                        </address>
-                         
-                     </div>
-                 </div>
-            </div>
-		</div>
-	</div>
+	</div> <!-- end section 4-->
 </div>
    
    

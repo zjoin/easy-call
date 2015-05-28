@@ -63,9 +63,10 @@ $(function(){
 });
 
 $( document ).ready(function() {
-$('.on-reg').on('click', function(){
-   $('.b-register').hide(); 
-   $('.b-register1').show(); 
+$('.z_recover').on('click', function(){
+   $('.all-register').hide(); 
+   $('.all-register.iforget').show(); 
+    $('.head-toggle').text('Напомнить пароль');
 });
 });
 

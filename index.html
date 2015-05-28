@@ -16,11 +16,13 @@
         <li data-menuanchor="secondPage"><a href="#secondPage">Описание</a></li>
         <li data-menuanchor="3page"><a href="#3page">Тарифы</a></li>
         <li data-menuanchor="4page"><a href="#4page">FAQ</a></li>
-<!--        <li data-menuanchor="lastPage"><a href="#lastPage">Вход</a></li>-->
+        <li ><a href="#firstPage" class="trigger">Вход</a></li>
+<!--
         <div class="b-login">
             <li><a href="" class="trigger">Вход / Регистрация</a></li>
-<!--            <li><a href="" class="trigger1">Регистрация</a></li>-->
+            <li><a href="" class="trigger1">Регистрация</a></li>
         </div>
+-->
     </div>
 
      
@@ -28,29 +30,31 @@
         <div class="modal-wrapper">
           <div class="modal">
             <div class="head">
-              <h3>Вход</h3>
+              <h3 class="head-toggle">Вход</h3>
               <a class="btn-close trigger" href=""></a>
             </div>
             <div class="content">
             <div class="enter">
                 
+              <div class="all-register">  
                  <div class="b-register">
-                 <div><input type="text" id="--z_login" placeholder="Логин"></div>
-                 <div><input type="email" id="-- l_email" placeholder="Введите ваш email"></div>
-                 <div><input type="password" id="--l_password" placeholder="Введите пароль"></div>
-                 <div><span class="here-we-go">Начать работу</span></div>
-                 <div><span id="-- z_recover">Восстановить пароль</span></div>
-                 
+                 <div><input type="email" id="l_email" placeholder="Введите ваш email"></div>
+                 <div><input type="password" id="l_pass" placeholder="Введите пароль"></div>
                 </div>
-                
-                     <div class="b-register1">
-<!--                 <div><input type="text" id="--z_login" placeholder="Логин"></div>-->
-                 <div><input type="email" id="-- l_email" placeholder="Введите ваш email"></div>
-                 <div><input type="password" id="--l_password" placeholder="Введите пароль"></div>
-                 <div><span id="-- z_recover">Восстановить пароль</span></div>
-                 
+                <div class="b-register-span">
+                 <div><span class="here-we-go" id="z-login">Войти</span></div>
+                 <div><span id="z_recover" class="z_recover">Восстановить пароль</span></div>
                 </div>
-                <div><span class="on-reg">Зарегестрироваться</span></div>
+             </div>   
+               
+              <div class="all-register iforget">   
+                <div class="r-email">
+                    <div><input type="email" id="recover_email" placeholder="Введите ваш email"></div>
+                    <div><span class="here-we-go" id="z-recover">Отправить</span></div>
+                </div>
+              </div>
+                 
+<!--                <div><span class="on-reg">Зарегестрироваться</span></div>-->
              </div>
             </div>
           </div>

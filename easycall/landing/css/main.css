@@ -225,7 +225,7 @@ h1 {
 
 
 .my-icons-sprite, .my-icons-contacts, .my-icons-phone {
-  background-image: url('/img/icons.png');
+  background-image: url('../../../img/icons.png');
   background-repeat: no-repeat;
 }
 
@@ -921,14 +921,14 @@ PRICING
     right: -38px;
     width: 31px;
     height: 35px;
-    background: url('/img/ruble.png');
+    background: url('../../../img/ruble.png');
     background-size: cover;
 }
 
 .plus-add  {
     font-size: 25px;
     position: relative;
-     background: url('/img/check66.png') no-repeat;
+     background: url('../../../img/check66.png') no-repeat;
      width: 24px;
     height: 24px;
     display: block;

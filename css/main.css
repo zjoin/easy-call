@@ -35,7 +35,7 @@ hr {
 }
 
 hr.hr-red {
- border-bottom: 1px solid #f05543;
+/* border-bottom: 1px solid #f05543;*/
 }
 
 
@@ -154,7 +154,7 @@ input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s eas
 input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;font-size: 18px;color:white;}
 
 
-#f05543
+
 
 .main-start input:focus {
     color: white;
@@ -353,14 +353,16 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 }
 
 #section1 {
-    background: rgba(255,255,255,.95);
+/*    background: rgba(255,255,255,.95);*/
+    background: rgba(84, 64, 63,.8);
 }
 
 #section2 {
    background: rgba(255,255,255,.8);
 }
 #section3 {
-     background: rgba(255,255,255,.9);
+/*     background: rgba(255,255,255,.9);*/
+  background: rgba(84, 64, 63,.6);
 /*
   background: url('img/1.jpg');
     background-size: cover;
@@ -529,6 +531,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     text-align: left;
 }
 .accordion h2 {
+  color: white;    
   margin: 0;
   padding: 8px;
   font-weight: 400;
@@ -547,14 +550,21 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
   font-size: 22px;
 }
 .accordion h2:hover, .accordion h2.active {
-  background: tomato;
-  color: white;
+    background: rgba(255,255,255,.3);
+   color: white;
 }
 .accordion .accContent {
   display: none;
   padding: 10px 0 5px 15px;
-  background: rgba(255,255,255,.5);
+/*  background: rgba(255,255,255,.5);*/
+    color: white;
 }
+
+.accordion .accContent p {
+    border-left: 1px solid;
+    padding-left: 10px;
+}
+
 .accordion img {
   max-width: 100%;
 }
@@ -1005,7 +1015,7 @@ TABS
 .tabs a {
 /*  background-color: #eff0f2;*/
   border-bottom: 1px solid #fff;
-  color: #888;
+  color: white;
   font-weight: 500;
   display: block;
   letter-spacing: 0;
@@ -1014,7 +1024,7 @@ TABS
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  border-bottom: 2px solid #f05543;
+  border-bottom: 2px solid white;
 }
 
 .tabs_item {
@@ -1038,7 +1048,13 @@ TABS
 
 .current a {
   color: #fff;
-  background: #f05543;
+/*  background: #f05543;*/
+/*
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+*/
+    background: rgba(255,255,255,.3);
 }
 
 .tabs-inner {
@@ -1048,7 +1064,9 @@ TABS
     display: flex;
 }
 
-
+.b-choose-show {
+    color: white;
+}
 
 
 .iphone {
@@ -1199,6 +1217,7 @@ TABS
     width: 40px;
     height: 40px;
 /*    background: tomato;*/
+    border: 1px solid;
     cursor: pointer;
     -webkit-transition: all .3s;
     transition: all .3s;
@@ -1262,11 +1281,24 @@ TABS
 
 
 .widget-descr {
-    max-width: 350px;
+/*    max-width: 350px;*/
+    color: white;
+}
+
+.widget-descr h3 {
+    color: white;
+}
+
+.sp {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -85px;
 }
 
 .sp p {
    font-size: 12px; 
+    color: white;
 }
 
 

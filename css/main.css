@@ -1265,7 +1265,9 @@ TABS
     max-width: 350px;
 }
 
-
+.sp p {
+   font-size: 12px; 
+}
 
 
 

@@ -1095,7 +1095,7 @@ TABS
   background: #fff;
   border-radius: 2px;
   height: 89%;
-  overflow: auto;
+  overflow: hidden;
 /*  padding: 20px;*/
   position: relative;
   z-index: 1;
@@ -1457,5 +1457,11 @@ TABS
 }
 
 
-
+/*
+@media screen and (max-width: 1024px) {
+    body {
+        display: none;
+    }
+}
+*/
 

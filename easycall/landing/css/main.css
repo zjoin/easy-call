@@ -148,6 +148,12 @@ h1 {
 .main-form input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;font-size: 18px;color:white;}
 
 
+.url-input input:focus::-webkit-input-placeholder { color:transparent; }
+.url-input input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+.url-input input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+.url-input input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+
 .main-start input:focus {
     color: white;
     font-size: 18px;

@@ -9,12 +9,6 @@ body {
 .section {
    font-family: 'Open Sans', sans-serif;  
 }
-/*
-.main-bg  {
-    background: url('http://www.motto.net.ua/pic/201210/1600x1200/motto.net.ua-35350.jpg');
-    background-size: cover;
-}
-*/
 
 video#bgvid {
     position: fixed;
@@ -28,12 +22,7 @@ video#bgvid {
     -webkit-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-/*
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
-*/
 }
-
 
 hr {
     width: 980px !important;
@@ -42,8 +31,6 @@ hr {
 hr.hr-red {
  border-bottom: 1px solid rgba(84, 64, 63,1);
 }
-
-
 
 * { outline: none; }
 input:focus {
@@ -60,7 +47,6 @@ h1 {
 .main-heading p {
     font-size: 1.5rem;
     color: white;
-/*    text-shadow: 1px 1px 10px rgba(0,0,0,.5);*/
     margin: 0;
 }
 
@@ -110,7 +96,6 @@ h1 {
 }
 
 .main-heading__try-now {
-/*    border: 2px solid white;*/
     border: none;
     background: none;
     color: white;
@@ -124,10 +109,14 @@ h1 {
 
 .main-heading__try-now.go-submit {
       background-color: rgba(255,255,255,.3);
-      border: none;
+/*      border: none;*/
       padding: 0;
       width: 200px;
       height: 55px;
+      float: right;
+     margin-left: 10px;
+     line-height: 55px;
+     cursor: pointer;
 }
 
 .main-heading__try-now.go-submit:hover {
@@ -157,8 +146,6 @@ h1 {
 .main-form input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;font-size: 18px;color:white;}
 .main-form input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;font-size: 18px;color:white;}
 .main-form input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;font-size: 18px;color:white;}
-
-
 
 
 .main-start input:focus {
@@ -225,7 +212,7 @@ h1 {
 
 
 .my-icons-sprite, .my-icons-contacts, .my-icons-phone {
-  background-image: url('../../../img/icons.png');
+  background-image: url('../img/icons.png');
   background-repeat: no-repeat;
 }
 
@@ -921,35 +908,21 @@ PRICING
     right: -38px;
     width: 31px;
     height: 35px;
-    background: url('../../../img/ruble.png');
+    background: url('../img/ruble.png');
     background-size: cover;
 }
 
 .plus-add  {
     font-size: 25px;
     position: relative;
-     background: url('../../../img/check66.png') no-repeat;
+     background: url('../img/check66.png') no-repeat;
      width: 24px;
     height: 24px;
     display: block;
     margin: auto;
 }
 
-/*
-.plus-add:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background: url('img/check66.png') no-repeat;
-}
-*/
-
-
 .pricing p {
-/*    color: #939598;*/
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -961,14 +934,12 @@ PRICING
 
 
 .pricing tr td.width-25 {
-/*    border-bottom: 2px solid #f05543;*/
     background-color: rgba(255,255,255,.6);
     padding-top: 25px;
 }
 
 .pricing td {
     text-align: center;
-/*    font-size: 16px;*/
     padding: .6em;
 }
 
@@ -976,10 +947,6 @@ PRICING
     padding: 1.5em;
 }
 .pricing td {
-/*
-    border-left: 2px solid rgba(0,0,0,.2);
-    border-right: 2px solid rgba(0,0,0,.2);
-*/
     border-bottom: 0;
     background: rgba(255,255,255,.8);
 }
@@ -1040,7 +1007,7 @@ TABS
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  border-bottom: 2px solid #f05543;
+  border-bottom: 2px solid rgba(84, 64, 63,1);
 }
 
 .tabs_item {
@@ -1064,13 +1031,7 @@ TABS
 
 .current a {
   color: #fff;
-  background: #f05543;
-/*
-    border-top: 2px solid;
-    border-left: 2px solid;
-    border-right: 2px solid;
-*/
-/*    background: rgba(255,255,255,.3);*/
+  background: rgba(84, 64, 63,1);
 }
 
 .tabs-inner {
@@ -1269,22 +1230,6 @@ TABS
 .go-left {
     left: 40px;
 }
-
-
-/*
-.enter {
-    width: 600px;
-    min-height: 300px;
-    background: #eee;
-    position: absolute;
-    top: 200px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    text-align: center;
-    display: none;
-}
-*/
 
 .enter h3 {
    font-family: 'Open Sans', sans-serif;

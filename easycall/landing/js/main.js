@@ -63,14 +63,18 @@ $(function(){
 });
 
 $( document ).ready(function() {
-$('.z_recover').on('click', function(){
-   $('.all-register').hide(); 
-   $('.all-register.iforget').show(); 
-    $('.head-toggle').text('Напомнить пароль');
-});
+    $('.z_recover').on('click', function(){
+       $('.all-register').hide(); 
+       $('.all-register.iforget').show(); 
+        $('.head-toggle').text('Напомнить пароль');
+    });
 });
 
-
+$( document ).ready(function() {
+    $('#firstPage').on('click', function(){
+        $('.i-focus').focus();
+    });
+});
 
 $( document ).ready(function() {
   $('.trigger').click(function() {

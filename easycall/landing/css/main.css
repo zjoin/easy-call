@@ -1094,12 +1094,12 @@ TABS
 .screen {
   background: #fff;
   border-radius: 2px;
-  height: 89%;
+  height: 100%;
   overflow: hidden;
 /*  padding: 20px;*/
   position: relative;
   z-index: 1;
-  top: 36px;
+  top: 0;
 }
 .screen:after {
   clear: both;

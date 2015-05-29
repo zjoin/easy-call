@@ -71,8 +71,8 @@
             <div class="unit-100">
                <div class="text-centered main-heading one-slide">
                     <h1>Easy Call</h1>
-                    <p>Это виджет, который сделает ваш сайт удобнее и увеличит продажи,</p>
-        <p>оптимизировав сайт для мобильных телефонов всего за 250 рублей.</p> 
+                    <p>Этот сервис, который сделает ваш сайт удобнее и увеличит продажи,</p>
+        <p>добавив на него кнопку быстрого звонка с мобильного телефона всего за 250 рублей.</p> 
                    <div class="main-form">
                    <div class="main-start">  
                     <input type="email" placeholder="Введите ваш email" class="i-focus">
@@ -88,7 +88,7 @@
                           <div class="inner-icons">
                             <div class="b-phone my-icons-phone"></div>
                             <p>
-                              посетителей вашего сайта заходят на него с мобильных телефонов
+                              Посетителей вашего сайта заходят на него с мобильных телефонов
                           </p>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                         <div class="inner-icons">
                           <div class="b-contacts my-icons-contacts"></div>
                           <p>
-                              посетителей, зашедших на сайт с телефонов ищут ваши контакты.
+                              Посетителей, зашедших на сайт с телефонов ищут ваши контакты.
                           </p>
                         </div>
                     </div>
@@ -127,6 +127,7 @@
             <div class="units-row end">
                 <div class="unit-25">
                     <div class="iphone">
+<!--
                       <div class="url-header">
                                 <div class="url-input">
                                     <label for="offer-site-input"></label>
@@ -136,12 +137,41 @@
                                     <div class="url-submit"></div>
                                 </div>
                     </div>
-			    <div class="screen">
-			   
-			    </div>
+-->
+			   		    <div class="screen">
+    <img src="easycall/landing/img/normann.ru.png">
+    <!-- Кнопка вызова -->
+    <div class="easycall_phone easycall_phone__show easycall_widgetbuton_body easycall_widgetbuton_button"
+         style="left: 50%;position: absolute;zoom: 0.7; /*display: none*/" id="button_call">
+        <a href="tel:89218885525">
+            <div class="easycall_phone__cir4 easycall_phone__handset easycall_widgetbuton_button"
+                 style="background-color: #FF7F50;"></div>
+        </a>
+    </div>
+
+    <!-- Вызов -->
+    <div class="screenoverlay invisible" id="make_call">
+        <div class="make_call">
+            <div class="number">8 (800) 000-00-00</div>
+            <div class="cancel">Отменить</div>
+            <div class="call">Позвонить</div>
+        </div>
+    </div>
+
+    <!-- Набор номера -->
+    <div class="call_screen invisible" id="call_screen">
+        <div class="call_number">8 (123) 456-78-90</div>
+        <div class="call_caption">Вызов...</div>
+        <div class="call_finish_button">
+            <img src="easycall/landing/img/trubka.svg" alt="">
+        </div>
+    </div>
+
+
+</div><!-- end screen-->
 			</div>
                 </div>
-                <div class="unit-75">
+                <div class="unit-35">
                     <div class="b-choose-show">
                        <div class="b-colors">
                           <p>Цвет</p>
@@ -171,6 +201,7 @@
 		<div class="units-row end">
 		<div class="unit-25">
 			         <div class="iphone">
+<!--
                       <div class="url-header">
                                 <div class="url-input">
                                     <label for="offer-site-input"></label>
@@ -180,9 +211,40 @@
                                     <div class="url-submit"></div>
                                 </div>
                     </div>
+-->
 			    <div class="screen">
-			   
-			    </div>
+    <img src="easycall/landing/img/normann.ru.png">
+    <!-- Кнопка вызова -->
+    <div class="easycall_phone easycall_phone__show easycall_widgetbuton_body easycall_widgetbuton_button"
+         style="left: 50%;position: absolute;zoom: 0.7; /*display: none*/" id="button_call2">
+        <a href="tel:89218885525">
+            <div class="easycall_phone__cir4 easycall_phone__handset easycall_widgetbuton_button"
+                 style="background-color: #FF7F50;"></div>
+        </a>
+    </div>
+
+
+    <!-- Офисы и отделы -->
+    <div class="screenoverlay invisible" id="office_list">
+        <div class="easycall_phone easycall_phone__show easycall_widgetbuton_body easycall_widgetbuton_button"
+             style="left: 50%;position: absolute;zoom: 0.7;">
+
+            <a href="tel:89218885525">
+                <div class="easycall_phone__cir4 easycall_Close easycall_widgetbuton_button"
+                     style="background-color: #FF7F50;"></div>
+            </a>
+        </div>
+        <div easycall_overlay="1"></div>
+        <ul class="easycall_phone_regions" easycall_ul_id="0" style="position: absolute; / margin-top: 0; /">
+            <li><span easycall_next_id="3" style="padding: 10px 0 10px 20px;">Офис на севере</span></li>
+            <li><span easycall_next_id="1" style="padding: 10px 0 10px 20px;">Офис на юге</span></li>
+        </ul>
+        <ul class="easycall_phone_regions" easycall_ul_id="1" style="position: absolute;/ margin-top: 0; /">
+            <li><a href="tel:+79218885525" easycall_phoneid="1" style="padding: 10px 0 10px 20px;">Отдел 1</a></li>
+            <li><a href="tel:+79218889281" easycall_phoneid="2" style="padding: 10px 0 10px 20px;">Отдел 2</a></li>
+        </ul>
+    </div>
+</div>
 			</div>
             </div>
             <div class="unit-75">

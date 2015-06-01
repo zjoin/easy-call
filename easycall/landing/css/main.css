@@ -28,6 +28,14 @@ hr {
     width: 980px !important;
 }
 
+.p-end {
+    padding-right: 0 !important;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
 hr.hr-red {
  border-bottom: 1px solid rgba(84, 64, 63,1);
 }
@@ -108,15 +116,14 @@ h1 {
 }
 
 .main-heading__try-now.go-submit {
-      background-color: rgba(255,255,255,.3);
-/*      border: none;*/
+      background: #f85c3c;
       padding: 0;
       width: 200px;
       height: 55px;
       float: right;
-     margin-left: 10px;
-     line-height: 55px;
-     cursor: pointer;
+      margin-left: 10px;
+      line-height: 55px;
+      cursor: pointer;
 }
 
 .main-heading__try-now.go-submit:hover {
@@ -249,11 +256,24 @@ h1 {
 */
 
 
+.phone-descr {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(84, 64, 63,1);
+}
 
+.b-options li {
+    color: #f05543;
+}
 
+.b-options li span {
+    color: rgba(84, 64, 63,1); 
+}
 
-
-
+.b-decor {
+    display: inline-block;
+    border-bottom: 1px solid;
+}
 
 .container {
     max-width: 980px;

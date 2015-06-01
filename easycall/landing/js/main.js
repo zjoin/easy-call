@@ -72,7 +72,7 @@ $( document ).ready(function() {
 
 $( document ).ready(function() {
     $('#firstPage').on('click', function(){
-        $('.i-focus').focus();
+        $('.main-start #i-focus').focus();
     });
 });
 

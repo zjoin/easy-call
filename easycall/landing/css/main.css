@@ -1160,7 +1160,7 @@ TABS
   z-index: 20;
 }
 
-.iphone input {
+.iphone input:not(.easycall_input__item) {
   width: 82%;
   height: 31px;
   position: absolute;

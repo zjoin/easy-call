@@ -952,6 +952,7 @@ PRICING
     font-size: 25px;
     position: relative;
      background: url('../img/check66.png') no-repeat;
+    background-size: cover;
      width: 24px;
     height: 24px;
     display: block;
@@ -1449,7 +1450,7 @@ TABS
 }
 
 .modal-wrapper input {
-    min-width: 320px;
+    max-width: 320px;
     height: 54px;
 }
 
@@ -1464,6 +1465,8 @@ TABS
 .all-register .z_recover {
      color: rgba(84, 64, 63,1);
 }
+
+
 
 .all-register .here-we-go {
     display: block;
@@ -1584,11 +1587,15 @@ TABS
 }
 
 
+
+
+/*
 @media screen and (max-width: 1124px) {
    video {
         display: none;
     } 
 }
+*/
 
 @media screen and (max-width: 480px) {
     video {
@@ -1596,6 +1603,7 @@ TABS
     }
     h1 {
         font-size: 2.2rem;
+        margin-top: 80px;
     }
     .main-heading p {
         padding: 0 40px;
@@ -1659,8 +1667,8 @@ TABS
 /*    .tab {padding-top: 70px;}*/
     .tabs_item {padding-top: 0px;}
     .b-choose-show { display: none; }
-    .phone-descr {font-size: 14px; font-weight: normal;padding: 0 20px;}
-    
+    .phone-descr {font-size: 12px; font-weight: normal;padding: 0 20px;}
+    .tab {padding-top: 80px;}
     .tabs a {
         font-size: 12px;
     }
@@ -1668,7 +1676,82 @@ TABS
     .tabs li {line-height: inherit;}
     
     .iphone {display: none;}
+    .sev-phones {display:none;}
+    .fp-tableCell {display: inherit;}
+    .accordion h2 {font-size: 14px;}
+    .accordion .accContent p {font-size: 12px;}
     
+    .pricing {
+        width: 100%;
+	overflow-y: auto;
+	
+      
+        display: block;
+        font-size: 50%;
+        padding-top: 80px;
+        padding-left: 10px;
+       padding-right: 10px;
+    }
+    
+    .all-accordion {
+       padding-top: 80px;
+    }
+    
+    .mobile {
+         width: 100%;
+	overflow-y: auto;
+        display: block;
+        display: none;
+    }
+    
+    .shitty-start-two {
+        display: none;
+    }
+    
+    .pricing tr:first-child span {
+        font-size: 18px;
+    }
+    
+    .pricing tr:first-child span:before {
+        top: 5px;
+        right: -15px;
+        width: 15px;
+        height: 15px;
+    }
+    
+    .plus-add {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .pricing tr:first-child td {
+        padding: 0;
+        width: 200px;
+    }
+    
+    .sp {
+        left: 50&;
+        margin-left: -75px;
+/*        display: none;*/
+    }
+    
+    .sp img {
+        width: 80px;
+    }
+    
+    .sp p {font-size: 10px;}
+    
+    .hr-red {display: none;}
+    
+    .modal {
+        width: 100%;
+          margin-left: -154px;
+    }
+    
+    .modal-wrapper input {
+        max-width: 320px;
+        height: 55px;
+    }
     
     .main-form input::-webkit-input-placeholder       {opacity: 1; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;font-size: 14px;color:white;}
 .main-form input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;font-size: 18px;color:white;}

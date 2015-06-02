@@ -1341,6 +1341,7 @@ TABS
   background: rgba(0,0,0,.5);
   visibility:hidden;
   opacity:0;
+    z-index: 9999;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -1465,6 +1466,7 @@ TABS
 }
 
 .all-register .here-we-go {
+    display: block;
     max-width: 320px;
     margin: auto;
     margin-bottom: 10px;
@@ -1655,9 +1657,9 @@ TABS
     .header__menu {display: block;}
 
 /*    .tab {padding-top: 70px;}*/
-    .tabs_item {padding-top: 10px;}
+    .tabs_item {padding-top: 0px;}
     .b-choose-show { display: none; }
-    .phone-descr {font-size: 14px; font-weight: normal;padding: 0 40px;}
+    .phone-descr {font-size: 14px; font-weight: normal;padding: 0 20px;}
     
     .tabs a {
         font-size: 12px;

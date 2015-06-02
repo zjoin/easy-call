@@ -71,6 +71,18 @@ $( document ).ready(function() {
 });
 
 $( document ).ready(function() {
+    $("#header__button").click(function() {
+      $(this).toggleClass("hamburger--open");
+        $('.menu').toggle();
+        $('.menu li a').on('click', function(){
+            $('.menu').hide();
+            $("#header__button").toggleClass("hamburger--open");
+        })
+    });
+});
+
+
+$( document ).ready(function() {
     $('#firstPage').on('click', function(){
         $('.main-start #i-focus').focus();
     });

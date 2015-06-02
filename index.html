@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Easy Call</title>
     <link rel="stylesheet" href="easycall/landing/css/jquery.fullPage.css">
     <link rel="stylesheet" href="easycall/landing/css/kube.min.css">
@@ -23,7 +24,15 @@
             <li><a href="" class="trigger">Вход</a></li>
             <li><a href="#firstPage">Регистрация</a></li>
         </div>
+
     </div>
+</ul>
+        
+<div class="header__menu">
+  <a id="header__button" class="hamburger" href="#">
+    <div class="hamburger__inner"></div>
+  </a>  
+</div>                        
 
         <div class="modal-wrapper">
           <div class="modal">
@@ -56,7 +65,7 @@
           </div>
         </div>
  
-</ul>
+
 
 <video autoplay loop id="bgvid">
     <source src="easycall/landing/video/video.mp4" type="video/mp4">
@@ -117,9 +126,9 @@
              
                         <div class="tab">
                             <ul class="tabs">
-                                <li><a href="#">Настройка вида</a></li>
-                                <li><a href="#">Выбор филиалов</a></li>
-                                <li><a href="#">Доп. настройки</a></li>
+                                <li id="tab1"><a href="#">Настройка вида</a></li>
+                                <li id="tab2"><a href="#">Выбор филиалов</a></li>
+                                <li id="tab3"><a href="#">Доп. настройки</a></li>
                             </ul> <!-- / tabs -->
 
 	<div class="tab_content">
@@ -127,18 +136,10 @@
             <div class="units-row end">
                 <div class="unit-25">
                     <div class="iphone">
-<!--
-                      <div class="url-header">
-                                <div class="url-input">
-                                    <label for="offer-site-input"></label>
-                                    <input id="offer-site-input" type="text" placeholder="http://">
-                                </div>
-                                <div class="url-bars">
-                                    <div class="url-submit"></div>
-                                </div>
-                    </div>
--->
-	  <div class="screen" id="screen1">
+                    
+                    
+
+<div class="screen" id="screen1">
     <img src="easycall/landing/img/normann.ru.png">
     <!-- Кнопка вызова -->
     <div class="easycall_phone easycall_phone__show easycall_widgetbuton_body easycall_widgetbuton_button"
@@ -194,7 +195,13 @@
                            <span class="to-right">Справа</span>
                        </div>
                     </div>
-               
+
+                   <div class="main-form shitty-start">
+                   <div class="main-start">  
+                    <input type="email" placeholder="Введите ваш email" id="i-focus">
+                       <span class="main-heading__try-now go-submit go-to-start">Начать работу</span>
+                    </div>
+                   </div> <!-- end form-->
                     </div>
                 </div>
                 <div class="unit-40">
@@ -209,6 +216,7 @@
                     </p>
                     </div>
                 </div>
+
             </div>
 
 		</div> <!-- / tabs_item -->
@@ -232,7 +240,7 @@
             
             
 			  
-    <div class="screen" id="screen2">
+   <div class="screen" id="screen2">
     <img src="easycall/landing/img/normann.ru.png">
     <!-- Кнопка вызова -->
     <div class="easycall_phone easycall_phone__show easycall_widgetbuton_body easycall_widgetbuton_button"
@@ -288,7 +296,8 @@
     </div>
    
 </div>
-        
+
+ <!-- end screen 2-->       
         
         
         
@@ -303,11 +312,7 @@
                        <li><span>c несколькими филиалами (например в разных районах города)</span></li>
                        <li><span>с несколькими отделами (например отдел продаж и отдел сервиса)</span></li> 
                    </ul>
-            
-                   
-<!--                    </div>-->
-                    
-<!--                     <div class="unit-50">-->
+
                       <p class="b-decor">
                        Вы также можете сделать двухуровневую систему:
                      </p>
@@ -347,12 +352,13 @@
                                     <div class="url-submit"></div>
                                 </div>
                     </div>
+                 
                     
-                    
-			     <div class="screen" id="screen3">
+                 
+     <div class="screen" id="screen3">
         <img src="easycall/landing/img/normann.ru.png">
        
-         <!-- Кнопка вызова -->
+          <!--Кнопка вызова -->
         <div class="easycall_phone easycall_phone__show easycall_widgetbuton_body easycall_widgetbuton_button"
              style="left: 50%;position: absolute;zoom: 0.7; /*display: none*/" id="button_call3">
             <a href="tel:89218885525">
@@ -362,14 +368,14 @@
         </div>
        
        
-        <!-- Сбор лидов -->
-        <div class="screenoverlay invisible" id="lead_harvest" style="z-index: 999999;">
+         <!--Сбор лидов -->
+        <div class="screenoverlay invisible" id="lead_harvest" style="z-index: 200000;">
            
             <div class="easycall_main easycall_mobile" id="easycall_call" easycall_widget_id="2566263" easycall_widgetbody="1" easycall_mobile_widget="1" style="
                 position: absolute;
                 zoom: 0.7;
             ">
-                <a href="javascript:void(0);" class="easycall_main__close" easycall_widgetclose_button="1" easycall_result_id="6"></a>
+                <a href="javascript:void(o);" class="easycall_main__close" easycall_widgetclose_button="1" easycall_result_id="6"></a>
                 <a href="http://cashmyvisit.com/?utm_source=http://46.182.26.165/&utm_medium=easycall_widget" class="easycall_main__cpr" target="_blank">Cashmyvisit</a>
                 <div class="easycall_textmid">
            
@@ -388,14 +394,40 @@
            
                 </div>
             </div>
-           
-           
-           
-           
         </div>
+        
+        
+         <!--Финал -->
+        <div class="screenoverlay invisible" id="lead_harvest_finish" style="z-index: 999999;">
+           
+            <div class="easycall_main easycall_mobile" id="easycall_call" easycall_widget_id="2566263" easycall_widgetbody="1" easycall_mobile_widget="1" style="
+                position: absolute;
+            ">
+                <a href="javascript:void(o);" class="easycall_main__close" easycall_widgetclose_button="1" easycall_result_id="6"></a>
+                <a href="http://cashmyvisit.com/?utm_source=http://46.182.26.165/&utm_medium=easycall_widget" class="easycall_main__cpr" target="_blank">Cashmyvisit</a>
+                <div class="easycall_textmid">
+            
+            
+                    <div class="easycall_title">
+                        <div class="easycall_lh30">Спасибо! Мы свяжемся с Вами в рабочее время</div>
+                    </div>
+                    <div class="easycall_buttons">
+                        <div class="easycall_buttons__connect">
+            
+                            
+                            
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
        
        
         </div>
+    
+    
+</div>
+<!-- end screen 3-->
 			    
 			    
 			</div>
@@ -447,7 +479,7 @@
                           <td class="width-20"><span>700</span><p>в месяц</p></td>
                       </tr>
                       <tr>
-                          <td>+1 сайт</td>
+                          <td>1 сайт</td>
                           <td><span class="plus-add"></span></td>
                           <td><span class="plus-add"></span></td>
                           <td><span class="plus-add"></span></td>
@@ -484,10 +516,10 @@
                           <td>
                               1 телефон
                           </td>
-                          <td>Бесконечных телефонов</td>
                           <td>1 телефон</td>
-                           <td>Бесконечных телефонов</td>
-                           <td>Бесконечных телефонов</td>
+                          <td>Неограниченное количество телефонов</td>
+                           <td>1 телефон</td>
+                           <td>Неограниченное количество телефонов</td>
                       </tr>
                       <tr>
                           <td></td>
@@ -497,7 +529,13 @@
                           <td>Сбор заявок в нерабочее время</td>
                       </tr>
                   </table>
-               </div>
+                   <div class="main-form shitty-start shitty-start-two">
+                   <div class="main-start">  
+                    <input type="email" placeholder="Введите ваш email" id="i-focus">
+                       <span class="main-heading__try-now go-submit go-to-start">Начать работу</span>
+                    </div>
+                   </div> <!-- end form-->
+               </div> <!-- end container -->
                 </div>
             </div>
 		</div>

@@ -155,10 +155,20 @@ h1 {
 .main-form input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;font-size: 18px;color:white;}
 
 
-.url-input input:focus::-webkit-input-placeholder { color:transparent; }
-.url-input input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
-.url-input input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
-.url-input input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+.main-form.shitty-start input::-webkit-input-placeholder       {opacity: 1; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;font-size: 18px;color:rgba(84, 64, 63,1);;}
+.main-form input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;font-size: 18px;color:rgba(84, 64, 63,1);;}
+.main-form input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;font-size: 18px;color:rgba(84, 64, 63,1);;}
+.main-form input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;font-size: 18px;color:rgba(84, 64, 63,1);;}
+.main-form input:focus::-webkit-input-placeholder {opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;font-size: 18px;}
+.main-form input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;font-size: 18px;color:#f85c3c;}
+.main-form input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;font-size: 18px;color:#f85c3c;}
+.main-form input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;font-size: 18px;color:#f85c3c;}
+
+
+.main-form.shitty-start input:focus {
+    border: 2px solid red;
+    color: rgba(84, 64, 63,1);
+}
 
 
 .main-start input:focus {
@@ -1477,11 +1487,194 @@ TABS
 }
 
 
-/*
-@media screen and (max-width: 1024px) {
-    body {
+.header__menu {
+  position: absolute;
+  top: 20px;
+  right: 20%;
+  z-index: 999;    
+}
+
+.hamburger {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  z-index: 2;
+}
+
+.hamburger__inner {
+  display: block;
+  width: 40px;
+  height: 6px;
+  margin-top: 12px;
+  background: rgba(84, 64, 63,1);;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.hamburger__inner::before, .hamburger__inner::after {
+  display: block;
+  position: absolute;
+  content: "";
+  z-index: -1;
+  width: 40px;
+  height: 6px;
+  background: rgba(84, 64, 63,1);;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.hamburger__inner::before {
+  top: 0;
+}
+.hamburger__inner::after {
+  top: 24px;
+}
+
+.hamburger--open .hamburger__inner {
+  background: none;
+}
+.hamburger--open .hamburger__inner::before, .hamburger--open .hamburger__inner::after {
+  top: 12px;
+}
+.hamburger--open .hamburger__inner::before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.hamburger--open .hamburger__inner::after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.header__menu {
+    display: none;
+}
+
+.shitty-start {
+    position: absolute;
+  top: 377px;
+  right: 222px;
+}
+
+.shitty-start input {
+    border: 2px solid #f05543;
+    background: white;
+}
+
+.go-to-start {
+    display: inline-block;
+    background: #f05543;
+    color: white;
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.shitty-start-two {
+    position: static;
+    text-align: center;
+}
+
+.shitty-start-two .main-start {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1124px) {
+   video {
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    video {
         display: none;
     }
+    h1 {
+        font-size: 2.2rem;
+    }
+    .main-heading p {
+        padding: 0 40px;
+        font-size: 14px;
+    }
+    .main-heading__try-now.go-submit {
+        float: none;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .b-per {
+        font-size: 20px;
+        display: none;
+    }
+    .my-icons-sprite, .my-icons-contacts, .my-icons-phone {
+        display: none;
+    }
+    .inner-icons {
+        padding: 0;
+        text-align: center;
+        display: none;
+    }
+    .b-phone + p, .b-contacts + p {
+        font-size: 13px;
+        margin-bottom: 0;
+        padding: 0 40px;
+    }
+    .main-start {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+    .main-start input {
+        padding-left: 5px;
+        height: 45px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .main-heading__try-now.go-submit {
+        float: right;
+        margin-top: 0;
+        width: 100%;
+        line-height: 45px;
+        height: 45px;
+        font-size: 14px;
+    }
+    
+    .menu {
+        display: none;
+        height: 100%;
+        background: rgba(0,0,0,.8);
+        position: absolute;
+    }
+    
+    .menu li {display: inherit;max-width:200px;}
+    .navbar li {float: none;}
+    .b-login, .menu li:last-child {float: none;}
+    
+    .header__menu {display: block;}
+
+/*    .tab {padding-top: 70px;}*/
+    .tabs_item {padding-top: 10px;}
+    .b-choose-show { display: none; }
+    .phone-descr {font-size: 14px; font-weight: normal;padding: 0 40px;}
+    
+    .tabs a {
+        font-size: 12px;
+    }
+    
+    .tabs li {line-height: inherit;}
+    
+    .iphone {display: none;}
+    
+    
+    .main-form input::-webkit-input-placeholder       {opacity: 1; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;font-size: 14px;color:white;}
+.main-form input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;font-size: 18px;color:white;}
+.main-form input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;font-size: 18px;color:white;}
+.main-form input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;font-size: 18px;color:white;}
+.main-form input:focus::-webkit-input-placeholder {opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;font-size: 18px;color:white;}
+.main-form input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;font-size: 18px;color:white;}
+.main-form input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;font-size: 18px;color:white;}
+.main-form input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;font-size: 18px;color:white;}
 }
-*/
 

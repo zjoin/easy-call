@@ -1587,15 +1587,34 @@ TABS
 }
 
 
+/***********************************************\
+
+ONE MORE TIME
+
+\***********************************************/
 
 
-/*
-@media screen and (max-width: 1124px) {
+
+
+
+@media screen and (max-width: 1110px) {
    video {
         display: none;
-    } 
+    }
+    .main-form.shitty-start {
+        position: static;
+    }
+     .main-form.shitty-start input {
+         width:inherit;
+         float: none;
+     }
+    .main-form.shitty-start .main-heading__try-now.go-submit {
+        float: none;
+        margin: 10px 0 0 0;
+        width: 222px;
+    }
 }
-*/
+
 
 @media screen and (max-width: 480px) {
     video {
@@ -1664,7 +1683,7 @@ TABS
     
     .header__menu {display: block;}
 
-/*    .tab {padding-top: 70px;}*/
+    .tab {padding-top: 70px;}
     .tabs_item {padding-top: 0px;}
     .b-choose-show { display: none; }
     .phone-descr {font-size: 12px; font-weight: normal;padding: 0 20px;}
@@ -1730,9 +1749,10 @@ TABS
     }
     
     .sp {
-        left: 50&;
+        left: 50%;
         margin-left: -75px;
-/*        display: none;*/
+        display: none;
+
     }
     
     .sp img {

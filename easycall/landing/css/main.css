@@ -268,7 +268,7 @@ h1 {
 
 .phone-descr {
     font-size: 18px;
-    font-weight: 500;
+/*    font-weight: 500;*/
     color: rgba(84, 64, 63,1);
 }
 
@@ -965,7 +965,7 @@ PRICING
 }
 
 .endless {
-    font-size: 50px;
+    font-size: 29px;
     padding-right: 5px;
 }
 
@@ -989,6 +989,78 @@ PRICING
 }
 
 .hover { background: rgba(84, 64, 63,.6); }
+
+.pricing .price-year {
+  background: rgba(84, 64, 63,1);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 25px;
+  padding-bottom: 10px;
+}
+
+.pricing .price-year span {
+    font-size: 40px;
+}
+
+.pricing .price-year span.t-slogan {
+    vertical-align: middle;
+    font-size: 20px;
+   
+}
+
+/*
+.pricing .price-year span.t-slogan:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: red;
+}
+*/
+
+/*
+.pricing .price-year:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 90px;
+    width: 0; 
+	height: 0; 
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid white;
+}
+*/
+
+/*
+.pricing .price-year span:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: -38px;
+  width: 31px;
+  height: 35px;
+  background: url('../img/ruble.png');
+  background-size: cover;
+}
+*/
+
+/*
+.pricing .price-year:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 35px;
+    background: #f96e6f;
+
+}
+*/
+
 
 /**************************************************\
 

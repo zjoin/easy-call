@@ -114,8 +114,14 @@ $('.btn-close').click(function(){
         $('.head-toggle').text('Напомнить пароль');
     });
 	
-	
+}
 
+
+function init_exixts() {
+$('#r_btn_register1, #z_login').click(function() {
+ $('.you-exist').fadeIn().delay(3000).fadeOut(); 
+ return false;
+});
 }
 
 
@@ -127,7 +133,7 @@ Full_Page();
 Init_Accordion();
 Init_Mobile();
 login_modal();
-
+init_exixts();
 })
  
 

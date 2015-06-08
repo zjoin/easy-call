@@ -52,7 +52,7 @@ h1 {
   
 }
 
-.main-heading p {
+.main-heading p:not(.you-exist) {
     font-size: 1.5rem;
     color: white;
     margin: 0;
@@ -183,8 +183,9 @@ h1 {
 .main-start {
     display: inline-block;
 /*    border: 2px solid white;*/
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .main-start input {
@@ -193,6 +194,8 @@ h1 {
     background: none;
     width: 300px;
     padding-left: 20px;
+    color: white;
+    font-size: 18px;
 }
 
 .main-go {
@@ -1499,6 +1502,7 @@ TABS
 .b-register {
     margin: 20px;
     margin-bottom: 0;
+    position: relative;
 }
 
 .b-register span {
@@ -1623,6 +1627,19 @@ TABS
   transform: rotate(45deg);
 }
 
+.you-exist {
+  display: block;
+  background-color: white;
+  color: #f85c3c;
+  margin-bottom: 10px;
+  padding: 3px;
+  display: none;
+  position: absolute;
+  top: -33px;
+  left: 0;
+  width: 100%;
+}
+
 
 .header__menu {
     display: none;
@@ -1696,7 +1713,7 @@ ONE MORE TIME
         font-size: 2.2rem;
         margin-top: 80px;
     }
-    .main-heading p {
+    .main-heading p:not(.you-exist) {
         padding: 0 40px;
         font-size: 14px;
     }

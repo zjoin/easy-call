@@ -1522,7 +1522,7 @@ TABS
 }
 
 .modal-wrapper input {
-    max-width: 320px;
+    width: 320px;
     height: 54px;
 }
 

@@ -1,27 +1,14 @@
 // init one page
-function Full_Page() {
+$(document).ready (function() {
     $('#fullpage').fullpage({
         anchors: ['firstPage', 'secondPage', '3page', '4page', '5page', 'lastPage'],
         menu: '.menu'
     });
-	
-	
-	$("table").delegate('td','mouseover mouseleave', function(e) {
-    if (e.type == 'mouseover') {
-		$("colgroup").eq($(this).index()).addClass("hover");
-    }
-    else {
-		$("colgroup").eq($(this).index()).removeClass("hover");
-    }
-});
-
-
-};    
+});    
     
     
 // init tabs
-function init_tabs(){
-
+	(function ($) { 
 		$('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
 		$('.tab ul.tabs li a').click(function (g) { 
 			var tab = $(this).closest('.tab'), 
@@ -35,16 +22,13 @@ function init_tabs(){
 			
 			g.preventDefault();
 		} );
-	}
+	})(jQuery);
 
  
 
- 
- 
- 
 
 // init accordion
-function Init_Accordion(){
+$(function(){
         var accordion = $('.item.accordion');
         accordion.each(function(){
        var accTrigger = $(this).children('h2');
@@ -76,10 +60,17 @@ function Init_Accordion(){
       }
     });
   });
-}
+});
 
+$( document ).ready(function() {
+    $('.z_recover').on('click', function(){
+       $('.all-register').hide(); 
+       $('.all-register.iforget').show(); 
+        $('.head-toggle').text('Напомнить пароль');
+    });
+});
 
-function Init_Mobile () {
+$( document ).ready(function() {
     $("#header__button").click(function() {
       $(this).toggleClass("hamburger--open");
         $('.menu').toggle();
@@ -88,47 +79,34 @@ function Init_Mobile () {
             $("#header__button").toggleClass("hamburger--open");
         })
     });
-}
+});
 
-function login_modal()
-{
-$('#btn_login').click(function(){
-  	$('.modal-wrapper').toggleClass('open');
-    $('.page-wrapper').toggleClass('blur');
-	return false;
-})
 
-$('.btn-close').click(function(){
-  	$('.modal-wrapper').toggleClass('open');
-    $('.page-wrapper').toggleClass('blur');
-	  $('.all-register').show(); 
-       $('.all-register.iforget').hide(); 
-	    $('.head-toggle').text('Вход');
-	
-	return false;
-})
-
- $('.z_recover').on('click', function(){
-       $('.all-register').hide(); 
-       $('.all-register.iforget').show(); 
-        $('.head-toggle').text('Напомнить пароль');
+$( document ).ready(function() {
+    $('#firstPage').on('click', function(){
+        $('.main-start #i-focus').focus();
     });
-	
-	
+});
 
-}
+$( document ).ready(function() {
+  $('.trigger').click(function() {
+     $('.modal-wrapper').toggleClass('open');
+    $('.page-wrapper').toggleClass('blur');
+     return false;
+  });
+});
 
 
 
-$(document).ready (function() {
-
-init_tabs();
-Full_Page();
-Init_Accordion();
-Init_Mobile();
-login_modal();
-
-})
- 
+$("table").delegate('td','mouseover mouseleave', function(e) {
+    if (e.type == 'mouseover') {
+//      $(this).parent().addClass("hover");
+      $("colgroup").eq($(this).index()).addClass("hover");
+    }
+    else {
+//      $(this).parent().removeClass("hover");
+      $("colgroup").eq($(this).index()).removeClass("hover");
+    }
+});
 
 

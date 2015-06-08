@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="shortcut icon" href="easycall/landing/img/favicon.ico" type="image/x-icon">
     <title>Easy Call</title>
     <link rel="stylesheet" href="easycall/landing/css/jquery.fullPage.css">
     <link rel="stylesheet" href="easycall/landing/css/kube.min.css">
@@ -21,7 +21,7 @@
         <li data-menuanchor="4page"><a href="#4page">FAQ</a></li>
 <!--        <li ><a href="#firstPage" class="trigger">Вход</a></li>-->
         <div class="b-login">
-            <li><a href="" class="trigger">Вход</a></li>
+            <li><a href="" id="btn_login" class="trigger">Вход</a></li>
             <li><a href="#firstPage">Регистрация</a></li>
         </div>
 
@@ -84,8 +84,8 @@
         <p>добавив на него кнопку быстрого звонка с мобильного телефона всего за 250 рублей.</p> 
                    <div class="main-form">
                    <div class="main-start">  
-                    <input type="email" placeholder="Введите ваш email" id="i-focus">
-                       <span class="main-heading__try-now go-submit">Начать работу</span>
+                    <input type="email" placeholder="Введите ваш email" id="r_email1">
+                       <span class="main-heading__try-now go-submit" id="r_btn_register1">Начать работу</span>
                     </div>
                    </div> <!-- end form-->
                 </div>
@@ -198,8 +198,8 @@
 
                    <div class="main-form shitty-start">
                    <div class="main-start">  
-                    <input type="email" placeholder="Введите ваш email" id="i-focus">
-                       <span class="main-heading__try-now go-submit go-to-start">Начать работу</span>
+                    <input type="email" placeholder="Введите ваш email" id="r_email2">
+                       <span class="main-heading__try-now go-submit go-to-start" id="r_btn_register2">Начать работу</span>
                     </div>
                    </div> <!-- end form-->
                     </div>
@@ -510,6 +510,7 @@
                            <td><span class="endless">&#8734;</span> количество телефонов</td>
                       </tr>
                     
+<!--
                       <tr>
                           <td class="width-20 price-year b-none"><span class="t-slogan">Больше, чем просто лучше</span></td>
                           <td class="width-20 price-year"><span>1250</span><p>в год</p></td>
@@ -517,11 +518,12 @@
                           <td class="width-20 price-year"><span>3000</span><p>в год</p></td>
                           <td class="width-20 price-year"><span>3500</span><p>в год</p></td>
                       </tr>
+-->
                   </table>
                    <div class="main-form shitty-start shitty-start-two">
                    <div class="main-start">  
-                    <input type="email" placeholder="Введите ваш email" id="i-focus">
-                       <span class="main-heading__try-now go-submit go-to-start">Начать работу</span>
+                    <input type="email" placeholder="Введите ваш email" id="r_email3">
+                       <span class="main-heading__try-now go-submit go-to-start" id="r_btn_register3">Начать работу</span>
                     </div>
                    </div> <!-- end form-->
                </div> <!-- end container -->
@@ -589,5 +591,6 @@
     <script src="easycall/landing/js/jquery-1.11.1.min.js"></script>
     <script src="easycall/landing/js/jquery.fullPage.min.js"></script>
     <script src="easycall/landing/js/main.js"></script>
+    <script src="easycall/landing/js/EasyCall_Land.js"></script>
 </body>
 </html>

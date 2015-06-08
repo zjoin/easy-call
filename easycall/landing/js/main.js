@@ -118,7 +118,7 @@ $('.btn-close').click(function(){
 
 
 function init_exixts() {
-$('#r_btn_register1, #z_login').click(function() {
+$('#r_btn_register1, #r_btn_register2, #r_btn_register3').click(function() {
  $('.you-exist').fadeIn().delay(3000).fadeOut(); 
  return false;
 });
